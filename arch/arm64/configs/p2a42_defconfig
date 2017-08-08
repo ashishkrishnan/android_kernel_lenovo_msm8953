@@ -3430,14 +3430,13 @@ CONFIG_LEDS_CLASS=y
 # CONFIG_LEDS_INTEL_SS4200 is not set
 # CONFIG_LEDS_LT3593 is not set
 # CONFIG_LEDS_TCA6507 is not set
-# CONFIG_LEDS_TLC591XX is not set
 # CONFIG_LEDS_LM355x is not set
 
 #
 # LED driver for blink(1) USB RGB LED is under Special HID drivers (HID_THINGM)
 #
 # CONFIG_LEDS_BLINKM is not set
-# CONFIG_LEDS_QPNP is not set
+CONFIG_LEDS_QPNP=y
 CONFIG_LEDS_QPNP_FLASH=y
 CONFIG_LEDS_QPNP_WLED=y
 # CONFIG_LEDS_AW2013 is not set
