@@ -482,6 +482,7 @@ struct input_keymap_entry {
 #define KEY_RFKILL		247	/* Key that controls all radios */
 
 #define KEY_MICMUTE		248	/* Mute / unmute the microphone */
+#define KEY_ONEKEY_SWITCH	249	/* Mute / unmute speaker */
 
 /* Code 255 is reserved for special needs of AT keyboard driver */
 
@@ -897,9 +898,6 @@ struct input_keymap_entry {
 #define SW_UNSUPPORT_INSERT	0x10  /* set = unsupported device inserted */
 #define SW_MICROPHONE2_INSERT   0x11  /* set = inserted */
 #define SW_MUTE_DEVICE		0x12  /* set = device disabled */
-/*add by lixh10 for one key low power 2016-03-16 start*/
-#define SW_ONEKEY_LOW_POWER	0x13  /* set = low power mode */	
-/*add by lixh10 for one key low power 2016-03-16 end*/
 #define SW_MAX			0x20
 #define SW_CNT			(SW_MAX+1)
 
