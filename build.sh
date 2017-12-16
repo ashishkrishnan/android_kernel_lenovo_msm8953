@@ -9,26 +9,26 @@ red='\033[0;31m'
 nocol='\033[0m'
 
 # Kernel details
-KERNEL_NAME="FireKernel"
+KERNEL_NAME="TestKernel"
 VERSION="v1"
 DATE=$(date +"%d-%m-%Y-%I-%M")
 DEVICE="kuntao"
 FINAL_ZIP=$KERNEL_NAME-$VERSION-$DEVICE-$DATE.zip
-defconfig=p2a42-fk_defconfig
+defconfig=lineage_kuntao_defconfig
 THREAD="$(nproc --all)"
 
 # Dirs
-KERNEL_DIR=~/android/kernel/lenovo/msm8953
+KERNEL_DIR=~/kernel/kuntao
 ANYKERNEL_DIR=$KERNEL_DIR/AnyKernel2
 OUT_DIR=$KERNEL_DIR/out
 KERNEL_IMG=$OUT_DIR/arch/arm64/boot/Image.gz-dtb
-UPLOAD_DIR=~/android/kernel/upload/$DEVICE
+UPLOAD_DIR=~/kernel/upload/$DEVICE
 
 # Export
 export ARCH=arm64
-export CROSS_COMPILE=~/android/kernel/toolchain/google-64-4.9/bin/aarch64-linux-android-
-export KBUILD_BUILD_USER="aman"
-export KBUILD_BUILD_HOST="FireLord"
+export CROSS_COMPILE=~/kernel/toolchain/google-64-4.9/bin/aarch64-linux-android-
+export KBUILD_BUILD_USER="subham"
+export KBUILD_BUILD_HOST="darkbox"
 
 ## Functions ##
 MAKE="make O=${OUT_DIR}"
