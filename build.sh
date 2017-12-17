@@ -9,12 +9,12 @@ red='\033[0;31m'
 nocol='\033[0m'
 
 # Kernel details
-KERNEL_NAME="TestKernel"
+KERNEL_NAME="OreoKernel-beta"
 VERSION="v1"
 DATE=$(date +"%d-%m-%Y-%I-%M")
 DEVICE="kuntao"
 FINAL_ZIP=$KERNEL_NAME-$VERSION-$DEVICE-$DATE.zip
-defconfig=lineage_kuntao_defconfig
+defconfig=lineageos_kuntao_defconfig
 THREAD="$(nproc --all)"
 
 # Dirs
