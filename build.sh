@@ -14,7 +14,7 @@ VERSION="v1"
 DATE=$(date +"%d-%m-%Y-%I-%M")
 DEVICE="kuntao"
 FINAL_ZIP=$KERNEL_NAME-$VERSION-$DEVICE-$DATE.zip
-defconfig=lineageos_kuntao_defconfig
+defconfig=p2a42_defconfig
 THREAD="$(nproc --all)"
 
 # Dirs
